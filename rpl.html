@@ -1,0 +1,324 @@
+<html>
+<head>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/icon.png" type="image/png">
+    <title>RPL - SMK Muhammadiyah</title>
+</head>
+<body>
+    <header class="bg-white fixed top-0 left-0 w-full flex items-center z-10 h-20 shadow-md">
+        <div class="container">
+            <div class="flex items-center justify-between relative">
+                <div class="px-16 md:px-[130px]">
+                    <a href="index.html"><img src="img/SMK-Muhammadiyah-logo-head-2.png" class="w-[165px] md:w-[175px] lg:w-[190px]"></a>
+                </div>
+                <button id="hamburger" name="hamburger" type="button" class="block absolute right-4 lg:hidden">
+                    <span class="hamburger-line transition duration-300 ease-in-out origin-top-left "></span>
+                    <span class="hamburger-line transition duration-300 ease-in-out"></span>
+                    <span class="hamburger-line transition duration-300 ease-in-out origin-bottom-left "></span>
+                </button>
+                <div class="flex items-center">
+                    <nav id="nav-menu" class="hidden absolute py-5 bg-white shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none h-80 lg:h-auto">
+                        <div class="max-w-7xl mx-auto px-1">
+                            <div class="flex justify-center h-10">
+                                <div class="lg:flex lg:justify-center lg:items-center ">
+                                    <a href="index.html" class="text-slate-600 text-sm font-semibold py-4 px-3 hover:text-slate-500 border-b-2 border-transparent hover:border-blue-500">Beranda</a>
+                                    
+                                    <!-- Dropdown Data Sekolah -->
+                                    <div class="relative group ">
+                                        <button class="text-slate-600 font-semibold text-sm py-4 md:py-4 px-3 hover:text-slate-500 focus:outline-none items-center flex text-center right-start border-b-2 border-transparent hover:border-blue-500">
+                                            Data Sekolah
+                                            <svg class="w-2.5 h-2.5 ms-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
+                                            </svg>
+                                        </button>
+                                        <div class="absolute hidden group-hover:block bg-white shadow-lg rounded-lg w-56">
+                                            <ul class="py-2">
+                                                <li><a href="#" class="text-sm flex mx-4 py-2 text-kata hover:bg-gray-100 hover:text-dark">Sambutan Kepala Sekolah</a></li>
+                                                <li><a href="#" class="text-sm flex mx-4 py-2 text-kata hover:bg-gray-100 hover:text-dark">Sambutan DIKDASMEN</a></li>
+                                                <li><a href="#" class="text-sm flex mx-4 py-2 text-kata hover:bg-gray-100 hover:text-dark">Sambutan Pengawas Pembina</a></li>
+                                                <li><a href="#" class="text-sm flex mx-4 py-2 text-kata hover:bg-gray-100 hover:text-dark">Sambutan Komite</a></li>
+                                                <li><a href="#" class="text-sm flex mx-4 py-2 text-kata hover:bg-gray-100 hover:text-dark">Profil Sekolah</a></li>
+                                                <li><a href="#" class="text-sm flex mx-4 py-2 text-kata hover:bg-gray-100 hover:text-dark">Sejarah Sekolah</a></li>
+                                                <li><a href="#" class="text-sm flex mx-4 py-2 text-kata hover:bg-gray-100 hover:text-dark">Struktur Organisasi Sekolah</a></li>
+                                                <li><a href="#" class="text-sm flex mx-4 py-2 text-kata hover:bg-gray-100 hover:text-dark">Gedung dan Fasilitas</a></li>
+                                                <li><a href="#" class="text-sm flex mx-4 py-2 text-kata hover:bg-gray-100 hover:text-dark">Prestasi Sekolah</a></li>
+                                                <li><a href="#" class="text-sm flex mx-4 py-2 text-kata hover:bg-gray-100 hover:text-dark">Daftar Guru</a></li>
+                                                <li><a href="#" class="text-sm flex mx-4 py-2 text-kata hover:bg-gray-100 hover:text-dark">Wali Kelas</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                    <!-- dropdown kompetensi keahlian -->
+                                    <div class="relative group">
+                                        <button class="text-slate-600 text-sm font-semibold py-4 px-3 hover:text-slate-500 focus:outline-none items-center flex text-center border-b-2 border-transparent hover:border-blue-500">
+                                            Kompetensi Keahlian
+                                            <svg class="w-2.5 h-2.5 ms-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
+                                            </svg>
+                                        </button>
+                                        <div class="absolute hidden group-hover:block bg-white shadow-lg rounded-lg w-56">
+                                            <ul class="py-2">
+                                                <li><a href="#" class="text-sm flex mx-4 py-2 text-kata hover:bg-gray-100 hover:text-dark">Teknik Kendaraan Ringan</a></li>
+                                                <li><a href="#" class="text-sm flex mx-4 py-2 text-kata hover:bg-gray-100 hover:text-dark">Teknik Sepeda Motor</a></li>
+                                                <li><a href="#" class="text-sm flex mx-4 py-2 text-kata hover:bg-gray-100 hover:text-dark">Bisnis Daring</a></li>
+                                                <li><a href="#" class="text-sm flex mx-4 py-2 text-kata hover:bg-gray-100 hover:text-dark">Rekayasa Perangkat Lunak</a></li>
+                                                <li><a href="#" class="text-sm flex mx-4 py-2 text-kata hover:bg-gray-100 hover:text-dark">Teknik Komputer Dan Jaringan</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                    <!-- dropdown unit kerja -->
+                                    <div class="relative group">
+                                        <button class="text-slate-600 text-sm font-semibold py-4 px-3 hover:text-slate-500 focus:outline-none items-center flex item-center border-b-2 border-transparent hover:border-blue-500">
+                                            Unit Kerja
+                                            <svg class="w-2.5 h-2.5 ms-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
+                                            </svg>
+                                        </button>
+                                        <div class="absolute hidden group-hover:block bg-white shadow-lg rounded-lg w-56">
+                                            <ul class="py-2">
+                                                <li><a href="#" class="text-sm flex mx-4 py-2 text-kata hover:bg-gray-100 hover:text-dark">Tata Usaha</a></li>
+                                                <li><a href="#" class="text-sm flex mx-4 py-2 text-kata hover:bg-gray-100 hover:text-dark">Waka. Kurikulum</a></li>
+                                                <li><a href="#" class="text-sm flex mx-4 py-2 text-kata hover:bg-gray-100 hover:text-dark">Waka. Hubin</a></li>
+                                                <li><a href="#" class="text-sm flex mx-4 py-2 text-kata hover:bg-gray-100 hover:text-dark">Waka. Kesiswaan</a></li>
+                                                <li><a href="#" class="text-sm flex mx-4 py-2 text-kata hover:bg-gray-100 hover:text-dark">Waka. AIK</a></li>
+                                                <li><a href="#" class="text-sm flex mx-4 py-2 text-kata hover:bg-gray-100 hover:text-dark">TWaka. Sarpras</a></li>
+                                                <li><a href="#" class="text-sm flex mx-4 py-2 text-kata hover:bg-gray-100 hover:text-dark">Pengelola Perpustakaan</a></li>
+                                                <li><a href="#" class="text-sm flex mx-4 py-2 text-kata hover:bg-gray-100 hover:text-dark">Pengelola BP/BK</a></li>
+                                                <li><a href="#" class="text-sm flex mx-4 py-2 text-kata hover:bg-gray-100 hover:text-dark">Pengelola Bisnis Center</a></li>
+                                                <li><a href="#" class="text-sm flex mx-4 py-2 text-kata hover:bg-gray-100 hover:text-dark">Pengelola Kedisiplinan</a></li>
+                                                <li><a href="#" class="text-sm flex mx-4 py-2 text-kata hover:bg-gray-100 hover:text-dark">Pengelola Bursa Kerja Khusus / BKK</a></li>
+                                                <li><a href="#" class="text-sm flex mx-4 py-2 text-kata hover:bg-gray-100 hover:text-dark">Pengelola Kantin SPW</a></li>
+                                                <li><a href="#" class="text-sm flex mx-4 py-2 text-kata hover:bg-gray-100 hover:text-dark">Pengelola DMS</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                    <!-- ekstrakulikuler -->
+                                    <div class="relative group">
+                                        <button class="text-slate-600 text-sm font-semibold py-4 px-3 hover:text-slate-500 focus:outline-none items-center flex text-center border-b-2 border-transparent hover:border-blue-500">
+                                            Agenda & berita
+                                            <svg class="w-2.5 h-2.5 ms-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
+                                            </svg>
+                                        </button>
+                                        <div class="absolute hidden group-hover:block bg-white shadow-lg rounded-lg w-56">
+                                            <ul class="py-2">
+                                                <li><a href="#" class="text-sm flex mx-4 py-2 text-kata hover:bg-gray-100 hover:text-dark">Agenda</a></li>
+                                                <li><a href="#" class="text-sm flex mx-4 py-2 text-kata hover:bg-gray-100 hover:text-dark">Kabar Berita</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                    <div class="relative group">
+                                        <button class="text-slate-600 text-sm font-semibold py-4 px-3 hover:text-slate-500 focus:outline-none items-center flex text-center border-b-2 border-transparent hover:border-blue-500">
+                                            Ekstrakulikuler
+                                            <svg class="w-2.5 h-2.5 ms-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
+                                            </svg>
+                                        </button>
+                                        <div class="absolute hidden group-hover:block bg-white shadow-lg rounded-lg w-56">
+                                            <ul class="py-2">
+                                                <li><a href="#" class="text-sm flex mx-4 py-2 text-kata hover:bg-gray-100 hover:text-dark">IPM (Ikatan Pelajar Muhammadiyah)</a></li>
+                                                <li><a href="#" class="text-sm flex mx-4 py-2 text-kata hover:bg-gray-100 hover:text-dark">Hizbul Wathan</a></li>
+                                                <li><a href="#" class="text-sm flex mx-4 py-2 text-kata hover:bg-gray-100 hover:text-dark">Tapak Suci</a></li>
+                                                <li><a href="#" class="text-sm flex mx-4 py-2 text-kata hover:bg-gray-100 hover:text-dark">Futsal</a></li>
+                                                <li><a href="#" class="text-sm flex mx-4 py-2 text-kata hover:bg-gray-100 hover:text-dark">Bola Basket</a></li>
+                                                <li><a href="#" class="text-sm flex mx-4 py-2 text-kata hover:bg-gray-100 hover:text-dark">Bola Voli</a></li>
+                                                <li><a href="#" class="text-sm flex mx-4 py-2 text-kata hover:bg-gray-100 hover:text-dark">Paskibra</a></li>
+                                                <li><a href="#" class="text-sm flex mx-4 py-2 text-kata hover:bg-gray-100 hover:text-dark">Keputrian</a></li>
+                                                <li><a href="#" class="text-sm flex mx-4 py-2 text-kata hover:bg-gray-100 hover:text-dark">English Club</a></li>
+                                                <li><a href="#" class="text-sm flex mx-4 py-2 text-kata hover:bg-gray-100 hover:text-dark">Bulu Tangkis</a></li>
+                                                <li><a href="#" class="text-sm flex mx-4 py-2 text-kata hover:bg-gray-100 hover:text-dark">Tenis Meja</a></li>
+                                                <li><a href="#" class="text-sm flex mx-4 py-2 text-kata hover:bg-gray-100 hover:text-dark">Sanggar Seni</a></li>
+                                                <li><a href="#" class="text-sm flex mx-4 py-2 text-kata hover:bg-gray-100 hover:text-dark">E-Sport</a></li>
+                                                <li><a href="#" class="text-sm flex mx-4 py-2 text-kata hover:bg-gray-100 hover:text-dark">Catur</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="hero" class="pt-14 pb-1 md:pt-[70px]">
+        <div class="container">
+            <div class="w-full px-2 flex flex-wrap justify-center items-center">
+                <div class="flex justify-center items-center p-5">
+                    <img src="img/aset/rpl.png" width="100px" class="mr-4">
+                    <div class="kata text-left">
+                        <p class="text-lg font-semibold text-kata">Kompetensi Keahlian</p>
+                        <p class="text-2xl font-semibold">Rekayasa Perangkat Lunak (RPL)</p>
+                        <hr class="border-t-2 border-garis my-4 w-1/2 md:w-[120px] lg:w-[130px]"/>
+                    </div>
+                </div>
+            </div> 
+        </div>
+    </section>
+    <hr class="border-t-2">
+
+    <div class="max-w-4xl mx-auto mb-10 mt-10 text-center">
+        <h1 class="text-3xl font-bold text-gray-800 mb-4">Profil Kompetensi Keahlian</h1>
+        <hr class="border-t-2 border-garis w-16 mb-6 mx-auto">
+        <div class="border border-gray-300 rounded-lg shadow-md">
+            <div class="border-b border-gray-300">
+                <ul class="flex justify-center">
+                    <li class="flex-1">
+                        <a href="#" class="tab-button block px-4 py-2 text-gray-800  hover:bg-gray-200  transition" onclick="showContent('tentang')">Tentang</a>
+                    </li>
+                    <li class="flex-1">
+                        <a href="#" class="tab-button block px-4 py-2 text-gray-800 hover:bg-gray-200 transition" onclick="showContent('visi')">Visi</a>
+                    </li>
+                    <li class="flex-1">
+                        <a href="#" class="tab-button block px-4 py-2 text-gray-800 hover:bg-gray-200 transition" onclick="showContent('misi')">Misi</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="p-6">
+                <div id="content-tentang">
+                    <p class="text-gray-800 text-sm text-justify">
+                        -
+                    </p>
+                </div>
+                <div id="content-visi" class="hidden">
+                    <p class="text-gray-800 text-sm text-justify">
+                        Menghasilkan lulusan professional di bidang perangkat lunak yang berwawasan entrepreneurship berbudi pekerti, jujur, dan memiliki loyalitas tinggi serta berakhlakul karimah
+                    </p>
+                </div>
+                <div id="content-misi" class="hidden">
+                    <p class="text-gray-800 text-sm text-justify">
+                        1. Menyiapkan peserta didik menjadi insan yang bertaqwa kepada Allah SWT <br>
+                        2. Menyiapkan peserta didik yang mampu membuka lapangan usaha sendiri secara profesional <br>
+                        3. Meningkatkan mutu proses belajar mengajar baik secara akademis, konseptual, maupun factual <br>
+                        4. Menghasilkan peserta didik yang loyal terhadap persyarikatan dan bermanfaat baik untuk dirinya, keluarga dan masyarakat <br>
+                        5. Menyiapkan sarana dan prasarana yang menunjang pada proses pembelajaran 
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="mb-12">
+        <h2 class="text-3xl font-bold mb-4 text-center text-gray-800">Struktur Organisasi</h2>
+        <hr class="border-t-2 border-garis w-16 mb-6 mx-auto">
+        <div class="flex flex-wrap justify-center gap-8">
+            <div class="text-center p-6 max-w-xs w-full">
+                <img alt="Profile image of Ari Sandriana, S.Kom." class="rounded-full mb-4 mx-auto" height="120" src="https://placehold.co/120x120" width="120" />
+                <h3 class="font-semibold text-xl text-gray-800">Ari Sandriana, S.Kom..</h3>
+                <p class="text-gray-600">Kepala Kompetensi Keahlian RPL</p>
+            </div>
+            <div class="text-center p-6 max-w-xs w-full">
+                <img alt="Profile image of Riesy Putri Navia. S.Kom." class="rounded-full mb-4 mx-auto" height="120" src="https://placehold.co/120x120" width="120" />
+                <h3 class="font-semibold text-xl text-gray-800">Riesy Putri Navia. S.Kom.</h3>
+                <p class="text-gray-600">Sekertaris</p>
+            </div>
+            <div class="text-center p-6 max-w-xs w-full">
+                <img alt="Profile image of Aldi Maulana, S.Pd." class="rounded-full mb-4 mx-auto" height="120" src="https://placehold.co/120x120" width="120" />
+                <h3 class="font-semibold text-xl text-gray-800">Aldi Maulana, S.Pd.</h3>
+                <p class="text-gray-600">Kepala Bengkel dan Maintenance &amp; Repair</p>
+            </div>
+        </div>
+    </div>
+    
+      
+    <div class="mb-28">
+        <h2 class="text-3xl font-bold mb-4 text-center text-gray-800">Galeri Foto</h2>
+        <hr class="border-t-2 border-blue-800 w-16 mb-6 md:mb-20 mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="flex justify-center">
+                <img class="w-full h-auto max-w-xs rounded-lg cursor-pointer" src="img/rpl/LKS2017Jabarjuara-comp-1-400x284.jpg" onclick="openModal(this)" />
+            </div>
+            <div class="flex justify-center">
+                <img class="w-full h-auto max-w-xs rounded-lg cursor-pointer" src="img/rpl/LKS2018Kotajuara-comp-1-400x284.jpg" onclick="openModal(this)" />
+            </div>
+            <div class="flex justify-center">
+                <img class="w-full h-auto max-w-xs rounded-lg cursor-pointer " src="img/rpl/LKS2019Kotajuara-comp-1-400x284.jpg" onclick="openModal(this)" />
+            </div>
+        </div>
+    </div>
+    
+    <!-- Modal -->
+    <div id="imageModal" class="fixed inset-0 bg-black bg-opacity-50 hidden justify-center items-center z-50">
+        <div class="relative">
+            <span id="closeModal" class="absolute top-2 right-2 text-white text-3xl cursor-pointer">&times;</span>
+            <img id="modalImage" class="max-w-full max-h-full object-contain rounded-lg" />
+        </div>
+    </div>
+    
+    
+
+
+
+
+    <footer class="bg-footer pt-16 pb-12">
+        <div class="container">
+            <div class="flex flex-wrap px-10">
+                <div class="w-full px-10 mb-12 text-slate-300 text-sm lg:w-1/3">
+                    <h3 class="font-bold text-2xl mb-5">SOSIAL MEDIA KAMI</h3>
+                    <p class="mb-5">Ayo Follow dan ikuti informasi seputar kegiatan di SMK Muhammadiyah Tasikmalaya melalui sosial media kami.</p>
+                    <div class="flex items-center">
+                        <!-- facebook -->
+                        <a href="#" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 hover:border-primary hover:bg-primary hover:text-white text-slate-300">
+                            <svg role="img" width="25" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Facebook</title><path d="M9.101 23.691v-7.98H6.627v-3.667h2.474v-1.58c0-4.085 1.848-5.978 5.858-5.978.401 0 .955.042 1.468.103a8.68 8.68 0 0 1 1.141.195v3.325a8.623 8.623 0 0 0-.653-.036 26.805 26.805 0 0 0-.733-.009c-.707 0-1.259.096-1.675.309a1.686 1.686 0 0 0-.679.622c-.258.42-.374.995-.374 1.752v1.297h3.919l-.386 2.103-.287 1.564h-3.246v8.245C19.396 23.238 24 18.179 24 12.044c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.628 3.874 10.35 9.101 11.647Z"/></svg>
+                        </a>
+
+                        <!-- instagram -->
+                        <a href="#" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 hover:border-primary hover:bg-primary hover:text-white text-slate-300">
+                            <svg role="img"  width="25" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Instagram</title><path d="M7.0301.084c-1.2768.0602-2.1487.264-2.911.5634-.7888.3075-1.4575.72-2.1228 1.3877-.6652.6677-1.075 1.3368-1.3802 2.127-.2954.7638-.4956 1.6365-.552 2.914-.0564 1.2775-.0689 1.6882-.0626 4.947.0062 3.2586.0206 3.6671.0825 4.9473.061 1.2765.264 2.1482.5635 2.9107.308.7889.72 1.4573 1.388 2.1228.6679.6655 1.3365 1.0743 2.1285 1.38.7632.295 1.6361.4961 2.9134.552 1.2773.056 1.6884.069 4.9462.0627 3.2578-.0062 3.668-.0207 4.9478-.0814 1.28-.0607 2.147-.2652 2.9098-.5633.7889-.3086 1.4578-.72 2.1228-1.3881.665-.6682 1.0745-1.3378 1.3795-2.1284.2957-.7632.4966-1.636.552-2.9124.056-1.2809.0692-1.6898.063-4.948-.0063-3.2583-.021-3.6668-.0817-4.9465-.0607-1.2797-.264-2.1487-.5633-2.9117-.3084-.7889-.72-1.4568-1.3876-2.1228C21.2982 1.33 20.628.9208 19.8378.6165 19.074.321 18.2017.1197 16.9244.0645 15.6471.0093 15.236-.005 11.977.0014 8.718.0076 8.31.0215 7.0301.0839m.1402 21.6932c-1.17-.0509-1.8053-.2453-2.2287-.408-.5606-.216-.96-.4771-1.3819-.895-.422-.4178-.6811-.8186-.9-1.378-.1644-.4234-.3624-1.058-.4171-2.228-.0595-1.2645-.072-1.6442-.079-4.848-.007-3.2037.0053-3.583.0607-4.848.05-1.169.2456-1.805.408-2.2282.216-.5613.4762-.96.895-1.3816.4188-.4217.8184-.6814 1.3783-.9003.423-.1651 1.0575-.3614 2.227-.4171 1.2655-.06 1.6447-.072 4.848-.079 3.2033-.007 3.5835.005 4.8495.0608 1.169.0508 1.8053.2445 2.228.408.5608.216.96.4754 1.3816.895.4217.4194.6816.8176.9005 1.3787.1653.4217.3617 1.056.4169 2.2263.0602 1.2655.0739 1.645.0796 4.848.0058 3.203-.0055 3.5834-.061 4.848-.051 1.17-.245 1.8055-.408 2.2294-.216.5604-.4763.96-.8954 1.3814-.419.4215-.8181.6811-1.3783.9-.4224.1649-1.0577.3617-2.2262.4174-1.2656.0595-1.6448.072-4.8493.079-3.2045.007-3.5825-.006-4.848-.0608M16.953 5.5864A1.44 1.44 0 1 0 18.39 4.144a1.44 1.44 0 0 0-1.437 1.4424M5.8385 12.012c.0067 3.4032 2.7706 6.1557 6.173 6.1493 3.4026-.0065 6.157-2.7701 6.1506-6.1733-.0065-3.4032-2.771-6.1565-6.174-6.1498-3.403.0067-6.156 2.771-6.1496 6.1738M8 12.0077a4 4 0 1 1 4.008 3.9921A3.9996 3.9996 0 0 1 8 12.0077"/></svg>
+                        </a>
+
+                        <!-- youtube -->
+                         <a href="#" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 hover:border-primary hover:bg-primary hover:text-white text-slate-300">
+                            <svg role="img" width="25" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" ><title>YouTube</title><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+                         </a>
+    
+                    </div>
+                </div>
+                <div class="w-full px-10 mb-12 lg:w-1/3 text-sm">
+                    <h3 class="font-semibold text-2xl text-white mb-5">KONTAK KAMI</h3>
+                    <ul class="text-slate-300">
+                        <li class="mb-5">
+                            <p>Alamat</p>
+                            <p>Jl. Rumah Sakit No.29 Kota Tasikmalaya</p>
+                        </li>
+                        <li class="mb-5">
+                            <p>Telepon</p>
+                            <p>(0265) 32780</p>
+                        </li>
+                        <li class="mb-5">
+                            <p>Email</p>
+                            <p>smkmuhammadiyahtsm@gmail.com</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="w-full px-10 mb-12 lg:w-1/3 text-sm">
+                    <h3 class="font-semibold text-2xl text-white mb-5">PRANALA LUAR</h3>
+                    <ul class="text-slate-300">
+                        <li class="mb-5">
+                            <p>Majelis Dikdasmen Muhammadiyah</p>
+                        </li>
+                        <li class="mb-5">
+                            <p>PP Muhammadiyah</p>
+                        </li>
+                        <li class="mb-5">
+                            <p>PSMK Kemdikbud</p>
+                        </li>
+                        <li class="mb-5">
+                            <p>Kemdikbud</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <h2 class=" text-[0.75rem] text-white text-center">ALL Rigths Reserved &copy; TIM ICT 2016-2024. SMK Muhammadiyah Tasikmalaya</h2>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

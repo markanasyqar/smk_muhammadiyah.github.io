@@ -1,0 +1,95 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.navbar-fixed {
+    @apply fixed z-[9999] bg-white bg-opacity-60 backdrop-blur-sm ;
+    box-shadow: inset 0 -1px 0 0 rgba(0, 0 , 0, 0.2);
+}
+
+.hamburger-line{
+    @apply w-[30px] h-[2px] my-2 block bg-dark;
+}
+
+.hamburger-active span:nth-child(1) {
+    @apply rotate-45
+}
+
+.hamburger-active span:nth-child(2) {
+    @apply scale-0;
+}
+
+.hamburger-active span:nth-child(3) {
+    @apply -rotate-45
+}
+
+#dark-toggle:checked ~ label div.toggle-circle {
+    @apply translate-x-3;
+}
+
+#nav.menu{
+    top: 100%;
+}
+
+/* Modal background */
+#imageModal {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+    z-index: 50;
+    visibility: hidden;
+}
+
+/* Style for closing button */
+#closeModal {
+    cursor: pointer;
+    font-size: 2rem;
+    color: black;
+    top: 10px;
+    right: 20px;
+    position: absolute;
+}
+
+/* Gambar di dalam modal (lebih besar dan responsif) */
+#modalImage {
+    max-width: 95vw; /* Lebar maksimal 95% dari lebar layar */
+    max-height: 95vh; /* Tinggi maksimal 95% dari tinggi layar */
+    object-fit: contain;
+    border-radius: 8px;
+}
+
+
+/* animasi */
+@keyframes slide-in-kanan {
+    0% {
+        transform: translateX(50%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+@keyframes slide-in-kiri {
+    0% {
+        transform: translateX(-50%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.animate-slide-in-kiri {
+    animation: slide-in-kiri 0.8s ease-in-out forwards;
+}
+.animate-slide-in-kanan {
+    animation: slide-in-kanan 0.8s ease-in-out forwards;
+}
